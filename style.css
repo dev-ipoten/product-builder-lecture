@@ -20,6 +20,8 @@ body.dark-mode {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
+    margin-top: 2rem; /* Add margin to the top */
+    margin-bottom: 2rem; /* Add margin to the bottom */
 }
 
 body.dark-mode .container {
@@ -128,4 +130,62 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+body.dark-mode .contact-form {
+    border-top-color: #555;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    box-sizing: border-box; /* To include padding in the width */
+}
+
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form textarea {
+    background-color: #555;
+    border-color: #777;
+    color: #f0f0f0;
+}
+
+.contact-form button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
