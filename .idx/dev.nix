@@ -15,6 +15,8 @@
     extensions = [
       # "vscodevim.vim"
       "google.gemini-cli-vscode-ide-companion"
+      "GitHub.copilot"
+      "GitHub.copilot-chat"
     ];
     # Enable previews and customize configuration
     previews = {
